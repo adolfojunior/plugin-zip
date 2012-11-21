@@ -143,15 +143,15 @@ public class LsZipPluginTest extends AbstractShellTest
                "org/",
                "org/jboss/",
                "org/jboss/forge/",
-               "org/jboss/forge/dev/",
-               "org/jboss/forge/dev/zip/",
-               "org/jboss/forge/dev/zip/LsZipPlugin.class",
-               "org/jboss/forge/dev/zip/LsZipPlugin$NameRegExFilter.class",
-               "org/jboss/forge/resources/",
-               "org/jboss/forge/resources/ZipEntryResource$FullyQualifiedNameComparator.class",
-               "org/jboss/forge/resources/ZipEntryResource$ZipEntryInputStream.class",
-               "org/jboss/forge/resources/ZipEntryResource.class",
-               "org/jboss/forge/resources/ZipResource.class");
+               "org/jboss/forge/zip/",
+			   "org/jboss/forge/zip/plugin",
+               "org/jboss/forge/zip/plugin/LsZipPlugin.class",
+               "org/jboss/forge/zip/plugin/LsZipPlugin$NameRegExFilter.class",
+               "org/jboss/forge/zip/resources/",
+               "org/jboss/forge/zip/resources/ZipEntryResource$FullyQualifiedNameComparator.class",
+               "org/jboss/forge/zip/resources/ZipEntryResource$ZipEntryInputStream.class",
+               "org/jboss/forge/zip/resources/ZipEntryResource.class",
+               "org/jboss/forge/zip/resources/ZipResource.class");
    }
 
    /**
@@ -167,12 +167,12 @@ public class LsZipPluginTest extends AbstractShellTest
       shell.execute("ls -a *.class");
 
       assertOutput(
-               "org/jboss/forge/dev/zip/LsZipPlugin.class",
-               "org/jboss/forge/dev/zip/LsZipPlugin$NameRegExFilter.class",
-               "org/jboss/forge/resources/ZipEntryResource$FullyQualifiedNameComparator.class",
-               "org/jboss/forge/resources/ZipEntryResource$ZipEntryInputStream.class",
-               "org/jboss/forge/resources/ZipEntryResource.class",
-               "org/jboss/forge/resources/ZipResource.class");
+               "org/jboss/forge/zip/plugin/LsZipPlugin.class",
+               "org/jboss/forge/zip/plugin/LsZipPlugin$NameRegExFilter.class",
+               "org/jboss/forge/zip/resources/ZipEntryResource$FullyQualifiedNameComparator.class",
+               "org/jboss/forge/zip/resources/ZipEntryResource$ZipEntryInputStream.class",
+               "org/jboss/forge/zip/resources/ZipEntryResource.class",
+               "org/jboss/forge/zip/resources/ZipResource.class");
    }
 
    /**
@@ -188,8 +188,8 @@ public class LsZipPluginTest extends AbstractShellTest
       changeDirectory(shell, "org");
       changeDirectory(shell, "jboss");
       changeDirectory(shell, "forge");
-      changeDirectory(shell, "dev");
       changeDirectory(shell, "zip");
+      changeDirectory(shell, "plugin");
 
       markOutput();
 
