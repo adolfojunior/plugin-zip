@@ -144,7 +144,7 @@ public class LsZipPluginTest extends AbstractShellTest
                "org/jboss/",
                "org/jboss/forge/",
                "org/jboss/forge/zip/",
-			   "org/jboss/forge/zip/plugin",
+			   "org/jboss/forge/zip/plugin/",
                "org/jboss/forge/zip/plugin/LsZipPlugin.class",
                "org/jboss/forge/zip/plugin/LsZipPlugin$NameRegExFilter.class",
                "org/jboss/forge/zip/resources/",
